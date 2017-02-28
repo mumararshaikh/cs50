@@ -19,9 +19,9 @@
 echo "CS50 appliance installation is being process"
 echo "========================================================================"
 apt-get update && apt-get upgrade -y
-apt-get install gdb clang make filezilla openjdk-7-jdk openjdk-7-jre nodejs astyle -y
+apt-get install gdb clang make nodejs -y
 echo "========================================================================"
-echo "c compiler, default-jdk & jre and filezilla has been installed"
+echo "c compiler has been installed"
 echo "========================================================================"
 echo "Installing apache2, php5, mysql-server"
 echo "========================================================================"
@@ -49,7 +49,7 @@ echo "========================================================================"
 echo "check50, style50 and render50 has been installed"
 echo "Installing python and ruby"
 echo "========================================================================"
-apt-get install python python-setuptools ruby -y
+apt-get install python3 python3-setuptools ruby -y
 easy_install pip
 su - -c "pip install cs50"
 gem install cs50
